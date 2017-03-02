@@ -1,0 +1,9 @@
+# image files
+*.pdf
+*.eps
+*.png
+*.jpg
+*.svg
+
+# other
+*.pyc
