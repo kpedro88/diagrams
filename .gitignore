@@ -5,5 +5,11 @@
 *.jpg
 *.svg
 
+# tex files
+*.aux
+*.dvi
+*.log
+*.def
+
 # other
 *.pyc
