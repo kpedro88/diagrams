@@ -19,14 +19,14 @@ HATCHED135n = pyx.pattern.hatched(0.07 * pyx.unit.v_cm,135,mystyle)
 vtx0 = Circle(0,0, radius=0.5).setFillStyle(HATCHED135n)
 vtx0.strokestyles.extend(mystyle)
 vtx0.fillstyles.extend(mystyle)
-P1a = MultiLine(in1, vtx0, n=2, dist=0.1).addLabel("$P_1$",displace=+.45,pos=0.4,size=labelsize).setStyles(mystyle)
-P2a = MultiLine(in2, vtx0, n=2, dist=0.1).addLabel("$P_2$",displace=-.45,pos=0.4,size=labelsize).setStyles(mystyle)
+P1a = MultiLine(in1, vtx0, n=2, dist=0.1).addLabel(proton,displace=+.45,pos=0.4,size=labelsize).setStyles(mystyle)
+P2a = MultiLine(in2, vtx0, n=2, dist=0.1).addLabel(proton,displace=-.45,pos=0.4,size=labelsize).setStyles(mystyle)
 
 vtx1 = Vertex(3.0, -0.85, mark=CIRCLE)
 vtx2 = Vertex(3.0, 0.85, mark=CIRCLE)
 
-st1 = Fermion(vtx0, vtx1).addLabel(stop,pos=0.6,displace=+.35,size=labelsize).setStyles(mystyle)
-st2 = Fermion(vtx0, vtx2).addLabel(stop,pos=0.6,displace=-.35,size=labelsize).setStyles(mystyle)
+st1 = Scalar(vtx0, vtx1, linestyle=dashed3).addLabel(stop,pos=0.6,displace=+.35,size=labelsize).setStyles(mystyle)
+st2 = Scalar(vtx0, vtx2, linestyle=dashed3).addLabel(stop,pos=0.6,displace=-.35,size=labelsize).setStyles(mystyle)
 
 out1a = Point(4.15, -1.8)
 out1b = Point(4.65, -0.65)
@@ -35,10 +35,10 @@ out2a = Point(4.15, 1.8)
 out2b = Point(4.65, 0.65)
 
 top1a = Fermion(vtx1,out1a).addLabel(top,displace=0,pos=1.10,size=labelsize,valign=MIDDLE,halign=LEFT).setStyles(mystyle)
-chi1b = Scalar(vtx1,out1b,linestyle=dashed3).addLabel(chi10,displace=0,pos=1.15,size=labelsize,valign=MIDDLE,halign=LEFT).setStyles(mystyle)
+chi1b = Gaugino(vtx1,out1b, frequency=0.60, amplitude=0.09).addLabel(chi10,displace=0,pos=1.15,size=labelsize,valign=MIDDLE,halign=LEFT).setStyles(mystyle)
 
 top2a = Fermion(vtx2,out2a).addLabel(top,displace=0,pos=1.20,size=labelsize,valign=MIDDLE,halign=LEFT).setStyles(mystyle)
-chi2b = Scalar(vtx2,out2b,linestyle=dashed3).addLabel(chi10,displace=0,pos=1.15,size=labelsize,valign=MIDDLE,halign=LEFT).setStyles(mystyle)
+chi2b = Gaugino(vtx2,out2b, frequency=0.60, amplitude=0.09).addLabel(chi10,displace=0,pos=1.15,size=labelsize,valign=MIDDLE,halign=LEFT).invert().setStyles(mystyle)
 
 name=sys.argv[0].replace(".py","")
 if name.find("/")>-1:
