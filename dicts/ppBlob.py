@@ -1,4 +1,5 @@
 from pyfeyn.user import *
+import path
 from particleNames import *
 from style import *
 from collections import OrderedDict

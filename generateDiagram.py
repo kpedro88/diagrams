@@ -1,6 +1,7 @@
-import os, sys
+import os
 from pyfeyn.user import *
 from optparse import OptionParser
+import path
 
 def list_callback(option, opt, value, parser):
     setattr(parser.values, option.dest, value.split(','))
@@ -53,7 +54,7 @@ if __name__ == "__main__":
     parser.add_option("-o", "--output", dest="output", default="", help="output name for diagram images (default = [dict name]+'_feyn')")
     parser.add_option("-p", "--pformat", dest="pformat", default=["pdf","png"], type="string", action="callback", callback=list_callback, help="comma-separated list of print formats (default = %default)")
     (options, args) = parser.parse_args()
-    
+
     if len(options.dictfile)==0:
         parser.error("Must specify a dictionary with -d")
     
