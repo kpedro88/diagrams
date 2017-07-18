@@ -6,7 +6,7 @@ This repo uses Python 2.7 and depends on a custom version of [pyfeyn](https://gi
 Installation instructions:
 ```
 pip install PyX==0.12.1
-pip install git+https://github.com/kpedro88/pyfeyn.git@v1.1.0
+pip install git+https://github.com/kpedro88/pyfeyn.git@v1.2.0
 ```
 
 All drawing classes in the custom version of pyfeyn can be constructed using `kwargs`.
