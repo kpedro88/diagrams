@@ -20,7 +20,7 @@ def buildLine(results,name,component,components):
     # lines require two points
     for p in ["point1","point2"]:
         if component[p] not in results:
-            buildPoint(results,components[component[p]])
+            buildPoint(results,component[p],components[component[p]],components)
     results[name] = component["type"](results[component["point1"]],results[component["point2"]],**(component["kwargs"]))
     if "label" in component.keys():
         buildLabel(results[name],component["label"])
