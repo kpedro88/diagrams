@@ -1,9 +1,4 @@
-from pyfeyn.user import *
-import path
-from particleNames import *
-from style import *
-from collections import OrderedDict
-from copy import deepcopy
+from imports import *
 
 components = OrderedDict()
 

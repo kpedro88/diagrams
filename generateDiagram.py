@@ -1,7 +1,6 @@
 import os
-from pyfeyn.user import *
 from optparse import OptionParser
-import path
+from imports import *
 
 def list_callback(option, opt, value, parser):
     setattr(parser.values, option.dest, value.split(','))
@@ -62,7 +61,7 @@ if __name__ == "__main__":
         options.output = options.dictfile.split('/')[-1].replace(".py","")+"_feyn"
     
     # import dict (name must be "components")
-    components = getattr(__import__(options.dictfile.replace(".py",""),fromlist="components"),"components")
+    components = getComponents(options.dictfile)
     
     pyx.text.preamble(r"\usepackage{amsmath,amssymb}")
     fd = FeynDiagram()

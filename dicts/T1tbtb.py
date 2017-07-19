@@ -1,4 +1,6 @@
-from T5qqqqVV import *
+from imports import *
+
+components = getComponents("T5qqqqVV",copy=True)
 
 components["qua1a"]["label"]["name"] = tbar
 components["qua1b"]["label"]["name"] = bot

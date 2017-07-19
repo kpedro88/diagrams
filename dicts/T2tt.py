@@ -1,4 +1,6 @@
-from T2qq import *
+from imports import *
+
+components = getComponents("T2qq",copy=True)
 
 components["sq1"]["label"]["name"] = stbar
 components["sq2"]["label"]["name"] = stop

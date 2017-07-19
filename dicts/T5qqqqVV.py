@@ -1,4 +1,6 @@
-from ppBlob import *
+from imports import *
+
+components = getComponents("ppBlob",copy=True)
 
 components.update([
     ("vtx1", {

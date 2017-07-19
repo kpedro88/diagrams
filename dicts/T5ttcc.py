@@ -1,4 +1,6 @@
-from T5qqqqVV import *
+from imports import *
+
+components = getComponents("T5qqqqVV",copy=True)
 
 for key in components:
     if key[-1]=='b':
