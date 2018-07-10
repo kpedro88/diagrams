@@ -41,3 +41,4 @@ components["qua1a"]["point2"] = "out1ab"
 
 components["qua2a"]["label"]["name"] = top
 components["qua2a"]["point2"] = "out2ab"
+components["qua2a"]["label"]["kwargs"]["pos"] = 1.15
