@@ -33,7 +33,7 @@ components.update([
             "mark": CIRCLE,
         },
         "label": {
-            "name": r"$g_{\text{q}}^{\text{Z}^{\prime}}$",
+            "name": r"$g_{\text{q}}$",
             "kwargs": {
                 "displace": -0.55,
                 "size": labelsize,
@@ -66,7 +66,7 @@ components.update([
             "mark": CIRCLE,
         },
         "label": {
-            "name": r"$g_{\chi}^{\text{Z}^{\prime}}$",
+            "name": r"$g_{\chi}$",
             "kwargs": {
                 "displace": 0.55,
                 "size": labelsize,
