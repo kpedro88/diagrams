@@ -17,6 +17,11 @@ components["q1b"]["kwargs"] = {
     "styles": mystyle,
 }
 components["q1b"]["label"]["name"] = r"$\Phi$"
+components["q1b"]["label"]["kwargs"] = {
+    "displace": +.45,
+    "pos": 0.5,
+    "size": labelsize,
+}
 
 components["vtx0"]["label"]["name"] = r"$\alpha_{s}$"
 
@@ -61,9 +66,11 @@ components.update([
         "label": {
             "name": qua,
             "kwargs": {
-                "displace": -.45,
-                "pos": 0.5,
+                "displace": 0,
+                "pos": 1.1,
                 "size": labelsize,
+                "valign": MIDDLE,
+                "halign": LEFT,
             },
         },
     }),
@@ -79,9 +86,11 @@ components.update([
         "label": {
             "name": r"$\bar{\chi}$",
             "kwargs": {
-                "displace": +.45,
-                "pos": 0.5,
+                "displace": 0,
+                "pos": 1.1,
                 "size": labelsize,
+                "valign": MIDDLE,
+                "halign": LEFT,
             },
         },
     }),

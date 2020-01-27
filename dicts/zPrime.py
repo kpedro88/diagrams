@@ -52,9 +52,11 @@ components.update([
         "label": {
             "name": qbar,
             "kwargs": {
-                "displace": +.45,
-                "pos": 0.5,
+                "displace": 0.1,
+                "pos": -0.15,
                 "size": labelsize,
+                "valign": MIDDLE,
+                "halign": LEFT,
             },
         },
     }),
@@ -104,9 +106,11 @@ components.update([
         "label": {
             "name": r"$\bar{\chi}$",
             "kwargs": {
-                "displace": +.45,
-                "pos": 0.5,
+                "displace": 0,
+                "pos": 1.1,
                 "size": labelsize,
+                "valign": MIDDLE,
+                "halign": LEFT,
             },
         },
     }),
@@ -114,10 +118,11 @@ components.update([
 
 components["q2a"] = deepcopy(components["q1a"])
 components["q2a"]["point1"] = "in2"
-components["q2a"]["label"]["kwargs"]["displace"] *= -1
+components["q2a"]["label"]["kwargs"]["displace"] = 0.0
+components["q2a"]["label"]["kwargs"]["pos"] = -0.15
 components["q2a"]["label"]["name"] = qua
 
 components["q2b"] = deepcopy(components["q1b"])
 components["q2b"]["point2"] = "out2"
-components["q2b"]["label"]["kwargs"]["displace"] *= -1
+components["q2b"]["label"]["kwargs"]["pos"] = 1.15
 components["q2b"]["label"]["name"] = r"$\chi$"
