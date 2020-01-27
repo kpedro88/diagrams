@@ -1,4 +1,5 @@
 proton=r"$\text{p}$"
+gluon=r"$\text{g}$"
 chi20=r"$\tilde{\chi}^0_2$"
 chi1pm=r"$\tilde{\chi}^{\pm}_1$"
 chi1p=r"$\tilde{\chi}^{+}_1$"
