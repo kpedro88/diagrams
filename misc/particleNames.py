@@ -1,6 +1,7 @@
 proton=r"$\text{p}$"
 gluon=r"$\text{g}$"
 chi20=r"$\tilde{\chi}^0_2$"
+chi30=r"$\tilde{\chi}^0_3$"
 chi1pm=r"$\tilde{\chi}^{\pm}_1$"
 chi1p=r"$\tilde{\chi}^{+}_1$"
 chi1m=r"$\tilde{\chi}^{-}_1$"
