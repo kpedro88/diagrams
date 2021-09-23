@@ -7,14 +7,14 @@ components.update([
         "type": Point,
         "kwargs": {
             "x": -2.1,
-            "y": -1.85,
+            "y": -1.0,
         },
     }),
     ("out1", {
         "type": Point,
         "kwargs": {
             "x": 2.1*2,
-            "y": -1.85,
+            "y": -1.0,
         },
     }),
 ])
@@ -35,7 +35,8 @@ components.update([
         "label": {
             "name": r"$g_{\text{q}}$",
             "kwargs": {
-                "displace": -0.55,
+                "displace": -0.6,
+                "angle": -10,
                 "size": labelsize,
             },
         }
@@ -70,7 +71,8 @@ components.update([
         "label": {
             "name": r"$g_{\chi}$",
             "kwargs": {
-                "displace": 0.55,
+                "displace": 0.6,
+                "angle": 10,
                 "size": labelsize,
             },
         }
@@ -107,7 +109,7 @@ components.update([
             "name": r"$\bar{\chi}$",
             "kwargs": {
                 "displace": 0,
-                "pos": 1.1,
+                "pos": 1.05,
                 "size": labelsize,
                 "valign": MIDDLE,
                 "halign": LEFT,
@@ -124,5 +126,5 @@ components["q2a"]["label"]["name"] = qua
 
 components["q2b"] = deepcopy(components["q1b"])
 components["q2b"]["point2"] = "out2"
-components["q2b"]["label"]["kwargs"]["pos"] = 1.15
+components["q2b"]["label"]["kwargs"]["pos"] = 1.1
 components["q2b"]["label"]["name"] = r"$\chi$"
