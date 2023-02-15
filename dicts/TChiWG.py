@@ -17,7 +17,20 @@ components["sq2"]["kwargs"] = {
 }
 components["sq2"]["label"]["name"] = chi10
 
+components["qua1a"]["type"] = Vector
+components["qua1a"]["kwargs"] = {
+    "frequency": 0.60,
+    "amplitude": 0.09,
+    "styles": mystyle,
+    "invert": True,
+}
 components["qua1a"]["label"]["name"] = Wpm
+components["qua2a"]["type"] = Vector
+components["qua2a"]["kwargs"] = {
+    "frequency": 0.60,
+    "amplitude": 0.09,
+    "styles": mystyle,
+}
 components["qua2a"]["label"]["name"] = phot
 
 components["chi1b"]["label"]["name"] = gravitino
